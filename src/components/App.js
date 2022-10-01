@@ -17,13 +17,12 @@ const App = () => {
 
   return (
     <div id="main">
-      <button  onClick={handleIncrement}>Increment</button>
-      <p className={(count%3==0 && count%5==0) ? "fizzbuzz" : (count%3==0) ? "fizz" : (count%5==0) ? "buzz" : "normal"}>{count}</p>
-      <button onClick={handleDecrement}>Decrement</button>
+      <button id='increment'  onClick={handleIncrement}>Increment</button>
+      <div id='counter' className={(count%3==0 && count%5==0) ? "fizzbuzz" : (count%3==0) ? "fizz" : (count%5==0) ? "buzz" : "normal"}>{count}</div>
+      <button id='decrement' onClick={handleDecrement}>Decrement</button>
     </div>
   )
 }
 
 
 export default App;
-// 
